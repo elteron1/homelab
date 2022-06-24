@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  guacamole:
+    image: oznu/guacamole:latest
+    container_name: guacamole
+    ports:
+      - "49170:8080"
