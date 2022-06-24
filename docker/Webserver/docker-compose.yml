@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  dashy:
+    container_name: elteroncz-website
+    image: elteron/elteroncz-website
+    ports:
+      - 49170:80
