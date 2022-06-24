@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  littlelink:
+    image: ghcr.io/techno-tim/littlelink-server:latest
+    container_name: littlelink-server
+    ports:
+      - "8080:3000"
+
+    environment:
+      - META_TITLE=EltEron
+      - META_DESCRIPTION=EltEron Link page
+      - META_AUTHOR=EltEron
+      - LANG=cz
+      - META_INDEX_STATUS=all
+      - THEME=light
+      - FAVICON_URL=https://pbs.twimg.com/profile_images/1373373598694584323/qICKh1cw_200x200.jpg
+      - AVATAR_URL=https://pbs.twimg.com/profile_images/1373373598694584323/qICKh1cw_200x200.jpg
+      - AVATAR_2X_URL=https://pbs.twimg.com/profile_images/1373373598694584323/qICKh1cw_400x400.jpg
+      - AVATAR_ALT=EltEron Profile Pic
+      - NAME=EltEron
+      - BIO=Všude tady mě můžeš kontaktovat
+      - FOOTER=Díky že ses zastavil
+      - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON
+      - CUSTOM_BUTTON_TEXT=Koukni se na mojí stránku
+      - CUSTOM_BUTTON_URL=https://www.elterontech.net
+      - CUSTOM_BUTTON_COLOR=#ED2756,#0085FF
+      - CUSTOM_BUTTON_TEXT_COLOR=#ffffff,#ffffff
+      - CUSTOM_BUTTON_ALT_TEXT=Koukni se na mojí stránku
+      - CUSTOM_BUTTON_NAME=HOMEPAGE,HOMEPAGE2
+      - CUSTOM_BUTTON_ICON=fas link,fab youtube
+      - BUTTON_TARGET=_blank
+      - GITHUB=https://github.com/elteron1
+      - TWITTER=https://twitter.com/elt_eron
+      - INSTAGRAM=https://www.instagram.com/_elteron_/
+      - YOUTUBE=https://www.youtube.com/channel/UC9bRvftDqHVZuSUn0DyENyg
+      - TWITCH=https://www.twitch.tv/elteron_
+      - KIT=https://kit.co/ELTERON
+      - REDDIT=https://www.reddit.com/user/elteroncz
+      - STEAM=https://steamcommunity.com/id/elteron
+      - WORDPRESS=https://blog.elteron.cz/wp-admin/
+      - PAYPAL=https://paypal.me/elteron?country.x=CZ&locale.x=cs_CZ
+      - TWITTER_CARD=summary_large_image
+      - TWITTER_IMAGE=https://pbs.twimg.com/profile_images/1373373598694584323/qICKh1cw_400x400.jpg
+      - TWITTER_SITE=@elt_eron
+      - TWITTER_CREATOR=@elt_eron
