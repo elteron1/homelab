@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  dashy:
+    container_name: Dashy
+    image: lissy93/dashy
+    ports:
+      - 4000:80
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
