@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  pihole:
+    image: pihole/pihole:latest
+    container_name: pihole
+    ports:
+      - "49167:53"
+      - "49166:80"
+      - "49168:53"
+    volumes:
+      - /home/matej/pihole/etc-dnsmasq.d:/etc/dnsmasq.d
+      - /home/matej/pihole/etc-pihole:/etc/pihole
+    enviroment:
+      - TZ=Europe/Prague
+      - DNS1=9.9.9.9
+      - DNS2=8.8.8.8
+      - ServerIP=192.168.0.119
