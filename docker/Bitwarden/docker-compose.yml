@@ -1,0 +1,8 @@
+version: '3.4'
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    volumes:
+      - bitwarden_data:/data
+    ports:
+      - 49155:80
